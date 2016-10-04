@@ -19,12 +19,19 @@
 		header("Location: login.php");
 	}
 	
-
-
+	$msg = "";
+	if(isset($_SESSION["message"])) {
+		
+		$msg = $_SESSION["message"];
+		
+		unset($_SESSION["message"]);
+	}
+	
 
 ?>
 
 <h1>DATA</h1>
-
+<?=$msg;?>
 <p>Tere Tulemast <?=$_SESSION["userEmail"];?>!</p>
 <a href="?logout=1">Logi välja</a>
+

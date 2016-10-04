@@ -30,6 +30,7 @@
 	$Eesnimi = "";
 	$Perenimi = "";
 	$aadress = "";
+	$loginEmail = "";
 	
 	
 	//$_post["signupEmail"];

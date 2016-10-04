@@ -65,6 +65,8 @@
 				$_SESSION["userId"] = $id;
 				$_SESSION["userEmail"] = $emailFromDb;
 				
+				$_SESSION["message"] = "<h1> Tere Tulemast!</h1>";
+				
 				header("Location: data.php");
 				
 				
@@ -81,8 +83,9 @@
 		
 		return $error;
 		
-	}
+	};
 	
+
 	
 	
 	
